@@ -3,7 +3,15 @@
 header{ height: 80px;}
 header .main-visual img{width: 100%;}
 header h1{position: absolute; top: 25px; left: 30px; z-index: 35;} 
-header ul.join{position: absolute; top: 10px; right: 30px; z-index: 35;}
+header ul.join{position: absolute; top: 25px; right: 30px; z-index: 35; width: 170px;}
+header ul.join li{float: left; width: 85px; }
+header ul.join li:first-child::before{content: ""; display: inline-block; padding-right: 5px; width: 23px; height: 23px; background: url('../img/icon.png') no-repeat; vertical-align: middle; }
+header ul.join li:last-child::before{content: ""; display: inline-block; padding-right: 5px; width: 23px; height: 23px; background: url('../img/icon.png')no-repeat  -23px 0; ; vertical-align: middle; }
+header ul.join li a:hover{color: #c80a1e;}
+
+
+
+
 header .lnb{position: absolute; left: 0; top:0; width: 100%; font-size: 0;}
 header .lnb nav{ position:relative; border-bottom: 1px solid rgba(170, 170, 170, 0.438); text-align: center; z-index: 35;}
 header .lnb nav:hover + div{height: 328px; opacity: 1;}
@@ -21,6 +29,7 @@ header .lnb nav > ul ul.dep2 a{position: relative;; font-size: 14px; transition:
 header .lnb nav > ul ul.dep2 a::after{content: ""; position: absolute; left: 50%; bottom: -7px; width: 0; height: 2px; background-color: #c80a1e; transition: 0.5s}
 header .lnb nav > ul ul.dep2 a:hover{color: #c80a1e;}
 header .lnb nav > ul ul.dep2 a:hover::after{width: 100%; left: 0;}
+
 
 /* main-visual */
 .main-visual{padding: 0 50px; position: relative;}
@@ -80,7 +89,7 @@ header .lnb nav > ul ul.dep2 a:hover::after{width: 100%; left: 0;}
 .notice > div .top > ul li:nth-child(2){background:url('../img/img-ik-02.jpg')no-repeat; color: #333; background-size: 250px 250px; }
 .notice > div .top > ul li:nth-child(3){background:url('../img/img-movein-03.jpg')no-repeat; background-size: 250px 250px;}
 .notice > div .top > div{ width: 370px; height: 250px; padding: 36px 20px 0; float: left; background-color: #eee;  box-sizing: border-box;}
-.notice > div .top > div h2{padding: 0 0 25px; font-size: 16px; text-align: center;}
+.notice > div .top > div h2{padding: 0 0 25px; font-size: 16px; font-weight: 500; text-align: center;}
 .notice > div .top > div div{padding:0 0 10px;}
 .notice > div .top > div input,
 .notice > div .top > div select{width: 100%; height: 40px; border: none;  text-indent:20px; }
@@ -93,7 +102,7 @@ header .lnb nav > ul ul.dep2 a:hover::after{width: 100%; left: 0;}
 .notice article > div.left li:nth-child(1){border-left: none;}
 .notice article > div.left li p{ padding: 20px 0 20px;}
 .notice article > div h2{height: 77px; line-height: 77px; font-size: 24px; text-align: center; border-bottom: 1px solid #fff;}
-.notice article > div > a {position: absolute;  right: 23px; top: 24px; width: 30px; height: 30px; background:url(../img/icon.png) no-repeat -187px 3px #fff; border-radius: 30px;color: transparent }
+.notice article > div > a {position: absolute;  right: 23px; top: 24px; width: 30px; height: 30px; background:url(../img/icon.png) no-repeat -187px 3px #fff; border-radius: 30px;color: transparent;  }
 .notice article > div a p{ font-size: 12px; color: rgb(119, 119, 119);}
 .notice article > div.right{float: right;}
 .notice article > div.right ul li{position: relative; border-bottom: 1px solid #fff;}
@@ -107,9 +116,21 @@ header .lnb nav > ul ul.dep2 a:hover::after{width: 100%; left: 0;}
 .banner .text span{position: absolute; top:20px; left:40%; font-size: 13px; letter-spacing: 3;}
 .banner .text span em{color: #c80a1e; font-weight: normal;}
 .banner .text p{position: absolute; top: 45px; left: 40%; font-size: 30px;}
-.banner a{display: block; position: absolute; top: 90px; left: 40%; padding: 5px 15px; border: 1px solid rgb(187, 187, 187); border-radius: 30px; transition: all 0.5s}
-.banner a i{padding-left: 3px; font-size: 13px; opacity: 0; transition: all 0.5s}
+.banner a{display: block; position: absolute; top: 90px; left: 40%; padding: 5px 15px; border: 1px solid rgb(187, 187, 187); border-radius: 30px; transition: all 0.5s; font-weight: 300;}
+.banner a i{padding-left: 3px; font-size: 13px; opacity: 0; transition: all 0.5s;}
 .banner a:focus,
 .banner a:hover i{opacity: 1; color: #fff;}
 .banner a:focus,
 .banner a:hover{color: #fff; background-color: #c80a1e; border: 1px solid #c80a1e; }
+
+/* footer */
+footer{ padding: 30px 0; background-color: #f0f0f0; border-top: 1px solid #aaa;}
+footer .wrap{margin: 0 auto; width: 1200px; overflow: hidden;}
+footer .wrap ul{float: left; padding: 20px 40px; box-sizing: border-box;} 
+footer .wrap ul li.sns{margin-top: 15px;}
+footer .wrap ul li.sns a{display:inline-block; margin: 3px;}
+footer .wrap ul address{padding-left: 70px; font-size: 12px; font-weight: 300; line-height: 2.2;}
+footer .wrap:last-child li{font-weight: 400;}
+footer .wrap:last-child li span{display: block; margin: 15px 0; font-size: 24px; }
+footer .wrap:last-child li{margin-bottom: 20px; font-size: 12px;}
+footer .wrap:last-child li a{display: inline-block; margin-right:10px }
