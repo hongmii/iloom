@@ -35,7 +35,7 @@ header .lnb nav > ul ul.dep2 a:hover::after{width: 100%; left: 0;}
 .main-visual ul.contents li img{width: 100%; height: 100%;}
 
 /* series */
-.series{width: 1180px; margin: 0 auto; padding: 58px 0 41px; text-align: center;}
+.series{width: 1180px; margin: 0 auto; padding: 58px 0 50px; text-align: center;}
 .series h2{font-size: 35px; font-weight: normal; text-align: center; letter-spacing: 10px}
 .series span{display: inline-block; padding:15px 0 30px; font-size: 18px; color: rgb(88, 88, 88);}
 .series ul::after{content: ""; display: block; clear: both;}
@@ -68,7 +68,7 @@ header .lnb nav > ul ul.dep2 a:hover::after{width: 100%; left: 0;}
 
 
 /* notice */
-.notice > div.notice-wrap{width: 1180px; margin:0  auto; padding: 55px 0;}
+.notice > div.notice-wrap{width: 1180px; margin:0  auto; padding: 60px 0;}
 .notice > div .top{overflow: hidden;}
 .notice > div .top > ul{ float: left;}
 .notice > div .top > ul a{display: block; padding: 100px 0 0; width: 250px; height: 250px; box-sizing: border-box; font-size: 16px; font-weight: bold; color: #fff; transition: all 0.5s;}
@@ -87,7 +87,7 @@ header .lnb nav > ul ul.dep2 a:hover::after{width: 100%; left: 0;}
 .notice > div .top > div input::-webkit-input-placeholder{color: rgb(119, 119, 119); font-size:14px;}
 .notice > div .top > div a{display: block; margin-top: 10px; height: 45px; line-height: 45px; text-align: center; background-color: #c80a1e; color: #fff;}
 
-.notice article {padding-top: 20px;}
+.notice article {padding-top: 20px; height: 200px;}
 .notice article > div{float: left; position: relative; width: 580px; background-color: #eee;}
 .notice article > div.left li{float: left; padding: 25px; width: 50%; box-sizing: border-box;  border-left: 1px solid #fff;}
 .notice article > div.left li:nth-child(1){border-left: none;}
@@ -101,3 +101,15 @@ header .lnb nav > ul ul.dep2 a:hover::after{width: 100%; left: 0;}
 .notice article > div.right ul li a{display: block; height: 48px; line-height: 48px; text-indent: 20px}
 .notice article > div.right p{position: absolute; right: 30px; top: 0; }
 .notice article > div a:hover{text-decoration-line: underline;}
+
+/* banner */
+.banner{position: relative; margin: 30px auto 110px; width: 1200px; height: 130px; background:url('../img/banner-1180x130.jpg')no-repeat;  background-size: 1180px 130px; }
+.banner .text span{position: absolute; top:20px; left:40%; font-size: 13px; letter-spacing: 3;}
+.banner .text span em{color: #c80a1e; font-weight: normal;}
+.banner .text p{position: absolute; top: 45px; left: 40%; font-size: 30px;}
+.banner a{display: block; position: absolute; top: 90px; left: 40%; padding: 5px 15px; border: 1px solid rgb(187, 187, 187); border-radius: 30px; transition: all 0.5s}
+.banner a i{padding-left: 3px; font-size: 13px; opacity: 0; transition: all 0.5s}
+.banner a:focus,
+.banner a:hover i{opacity: 1; color: #fff;}
+.banner a:focus,
+.banner a:hover{color: #fff; background-color: #c80a1e; border: 1px solid #c80a1e; }
