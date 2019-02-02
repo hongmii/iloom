@@ -6,14 +6,11 @@
         <title>Home | iloom</title>
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link href="css/style.css" media="screen and (min-width: 851px)" rel="stylesheet" /> -->
-        <link href="css/index.css" rel="stylesheet" />
-        <link href="css/common.css" rel="stylesheet" />
-        <!-- <link href="css/style_mobile.css" media="screen and (max-width: 850px)" rel="stylesheet" /> -->
+        <link href="css/index.css" media="screen and (min-width: 851px)" rel="stylesheet" />
+        <link href="css/index_mobile.css" media="screen and (max-width: 850px)" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
             crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
         <script src="js/jquery-3.3.1.min.js"></script>
     </head>
 <body>
@@ -22,8 +19,14 @@
     <header>
         <h1><a href="#"><img src="img/gnb-logo.png" alt="일룸"></a></h1>
         <h2 class="hide">대메뉴</h2>
+        <input type="checkbox" id="menuicon" class="mobile">
+        <label for="menuicon" class="mobile" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span></label>
+        
         <div class="lnb">
-        <nav>
+        <nav id="sidebar">
             <ul>
                 <li><a href="#">기업소개</a>
                 <ul class="dep2">
@@ -77,26 +80,28 @@
 
     <section class="main-visual">
         <h2 class="hide">광고영역</h2>
-        <!-- <a href="#" class="prev">이전</a>
-        <a href="#" class="next">다음</a> -->
+        <div class="image-slide">
+            <div class="box">
+                    <ul class="slide">
+                            <li><a href=""><img src="img/header.jpg" alt="일룸은 가구를 만듭니다"></a></li> 
+                            <li><a href=""><img src="img/S1200-7b6bca69-b620-4fd0-9cac-eb289e634e6b.jpg" alt="일룸은 매장전경"></a></li> 
+                        <li><a href=""><img src="img/main-visual1.jpg" alt="2019 일룸의 새로운 학생방"></a></li> 
+                        <li><a href=""><img src="img/main-visual4.jpg" alt="ICARIA 모던클래식 스타일로 즐기는 프리미엄 모션 침실, 이카리아"></a></li> 
+                        <li><a href=""><img src="img/main-visual5.jpg" alt="i love my room 일룸이 제안하는 '아이가 사랑하는 아이방'"></a></li> 
+                    </ul>
         <ul class="indicator">
-            <li ><a href="#" class="on">벨리니가 디자인한 우리아이의 비밀 아지트,허비</a></li>
-            <li><a href="#">2019 일룸의 새로운 학생방 광고</a></li>
-            <li><a href="#">일룸의 독서실</a></li>
+            <li  class="on" ><a href="#">일룸은가구를만듭니다</a></li>
+            <li><a href="#">일룸매장전경</a></li>
+            <li><a href="#">일룸의 학생방 광고</a></li>
             <li><a href="#">프리미엄 모션 침실 이카리아</a></li>
             <li><a href="#">일룸이 제안하는 '아이가 사랑하는 아이방'</a></li>
         </ul>
-        <ul class="contents">
-                <!-- <li><a href=""><img src="img/header.jpg" alt="일룸은 가구를 만듭니다"></a></li>  -->
-                <li><a href=""><img src="img/S1200-7b6bca69-b620-4fd0-9cac-eb289e634e6b.jpg" alt="일룸은 매장전경"></a></li> 
-            <!-- <li><a href=""><img src="img/main-visual1.jpg" alt="2019 일룸의 새로운 학생방"></a></li>  -->
-            <!-- <li class="slide"><a href=""><img src="img/main-visual3.jpg" alt="HERBIE 벨리니가 디자인한 우리아이의 비밀 아지트,허비"></a></li>
-            <li><a href=""><img src="img/main-visual2.jpg" alt="ITHAA-NEO 차분히 집중할 수 있는 나만의 독서실(온라인전용)"></a></li> 
-            <li><a href=""><img src="img/main-visual4.jpg" alt="ICARIA 모던클래식 스타일로 즐기는 프리미엄 모션 침실, 이카리아"></a></li> 
-            <li><a href=""><img src="img/main-visual5.jpg" alt="i love my room 일룸이 제안하는 '아이가 사랑하는 아이방'"></a></li> -->
-        </ul>
+    </div>
+    </div>
     </section>
-
+    <!-- main-visual -->
+    
+    
     <section class="series">
         <h2>시리즈</h2>
         <span>일룸이 제안하는 다양한 시리즈를 만나보세요.</span>
@@ -122,11 +127,18 @@
         <div>자세히보기</div>
     </div>
     </a></li>
+    <li class="mobile"><a href="#"><em><img src="img/series-student.jpg" alt="일룸시리즈-학생방"></em>
+        <div class="text"> 
+            <h3>ROY</h3>
+    <p>감각적이고 자유로운 자기주도형 학생방, 로이</p>
+    <div>자세히보기</div>
+</div>
+</a></li>
     </ul>
     <a href="#" class="btn-more">더보기</a>
     </section>
-       
-    <section class="life-style">
+        
+    <section class="life-style pc">
         <ul>
             <li><a href="#"><em><img src="img/life-style1.jpg" alt="event-새롭고 설레는 시작을 일룸과 함께하세요."></em></a></li>
             <li><a href="#"><em><img src="img/life-style2.jpg" alt="일룸이 제안하는 공간 속 새로운 삶의 모습을 만나보세요"></em></a></li>
@@ -134,6 +146,7 @@
         </ul>
     </section>
 
+ 
     <section class="notice">
         <div class="notice-wrap">
             <div class="top">
@@ -142,7 +155,7 @@
                     <li><a href="#">인스타그램<span>소소한 일룸 인테리어 이야기</span></a></li>
                     <li><a href="#">대리점 찾기<span>가까운 일룸 매장 확인</span></a></li>
                 </ul>
-                <div>
+                <div class="pc">
                     <h2>제품찾기</h2>
                     <div>
                         <select title="검색조건 선택">
@@ -180,6 +193,7 @@
         </div>
     </section>
 
+    
     <section class="banner">
         <h2 class="hide">'이유있는' 디자인, 일룸 활용백서</h2>
         <div class="text"><span>'이유있는'디자인, <em>일룸 활용 백서</em> </span><p>디자인을 알면 활용도가 보인다</p></div>
@@ -195,18 +209,18 @@
        <a href="#"><img src="img/footer-f.png" alt="페이스북"></a> 
        <a href="#"><img src="img/footer-i.png" alt="인스타그램"></a> </li>
     </ul>
-        <ul><li><address>
+        <ul ><li><address>
             서울시 송파구 오금로311(오금동45-1)(주)일룸-대표이사 강성문<br>
             개인정보보호 책임자:강성문<br>
             사업자등록번호:215-86-93600 통신판매업신고: 2009-서울송파-0069호 부가통신사업신고필증:021129<br>
             webmaster@iloom.com Copyright &copy; 2019 iloom Inc All rights reserved
 
         </address></li></ul>
-        <ul>
+        <ul class="cs">
             <li>
-                고객센터<span>1577-5670</span><em>평일 09:30~17:30, 제품문의, 매장안내,AS, 분해설치</em>
+                고객센터<span>1577-5670</span><em class="pc">평일 09:30~17:30, 제품문의, 매장안내,AS, 분해설치</em>
             </li>
-            <li>
+            <li class="pc">
             <a href="#"><img src="img/mark-1.png" alt="Norton by Symantec"></a>
             <a href="#"><img src="img/mark-2.png" alt="현금영수증"></a>
             <a href="#"><img src="img/mark-3.png" alt="LGU+, escrow"></a>
@@ -214,7 +228,7 @@
     </div>
     </footer>
 
-</div>
+</div> 
     <script src="js/script.js"></script>
     
 </body>
