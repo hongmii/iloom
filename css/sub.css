@@ -45,6 +45,9 @@ table {
 
 #skip-nav {position: fixed; left: 0; top: -41px; width: 500px; line-height: 40px; font-size: 16px; text-align: center; background: rgba(0, 0, 0, 0.4); color: #ffffff; border-bottom: rgba(255, 255, 255, 0.8); transition: top 0.3s;}
 #skip-nav:focus {top: 0; z-index: 101;}
+.mobile{display: none !important;}
+.pc{display: block ;}
+div.wrap{ min-width: 1024px; position: relative;}
 
 /* header */
 header{ height: 80px;}

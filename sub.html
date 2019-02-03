@@ -15,63 +15,69 @@
 
     </head>
 <body>
-    <div class="wrap" id="main">
-            <a href="#main" id="skip-nav">본문 바로가기</a>
-    <header>
-        <h1><a href="https://hongmii.github.io/iloom/#"><img src="img/gnb-logo.png" alt="일룸"></a></h1>
-        <h2 class="hide">대메뉴</h2>
-        <div class="lnb">
-        <nav>
-            <ul>
-                <li><a href="#">기업소개</a>
-                <ul class="dep2">
-                    <li><a href="#">경영이념</a></li>
-                    <li><a href="#">경영방침</a></li>
-                    <li><a href="#">사업소개</a></li>
-                    <li><a href="#">연혁 및 수상</a></li>
-                    <li><a href="#">일룸소식</a></li>
-                </ul>
-            </li>
-                <li><a href="#">채용안내</a>
-                <ul class="dep2">
-                    <li><a href="#">채용공고</a></li>
-                    <li><a href="#">나의 채용정보</a></li>
-                    <li><a href="#">채용정보</a></li>
-                    <li><a href="#">일룸인사</a></li>
-                </ul>
-                </li>
-                <li><a href="#">투자정보
+        <div class="wrap" id="main">
+                <a href="#main" id="skip-nav">본문 바로가기</a>
+        <header>
+            <h1><a href="https://hongmii.github.io/iloom/#"><img src="img/gnb-logo.png" alt="일룸"></a></h1>
+            <h2 class="hide">대메뉴</h2>
+            <input type="checkbox" id="menuicon" class="mobile">
+            <label for="menuicon" class="mobile" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span></label>
+            
+            <div class="lnb">
+            <nav id="sidebar">
+                <ul>
+                    <li><a href="#">기업소개</a>
                     <ul class="dep2">
-                        <li><a href="#">경영정보</a></li>
-                        <li><a href="#">재무정보</a></li>
-                        <li><a href="#">공시</a></li>
+                        <li><a href="#">경영이념</a></li>
+                        <li><a href="#">경영방침</a></li>
+                        <li><a href="#">사업소개</a></li>
+                        <li><a href="#">연혁 및 수상</a></li>
+                        <li><a href="#">일룸소식</a></li>
                     </ul>
-                </a></li>
-                <li><a href="#">사회공헌</a>
-                <ul class="dep2">
-                    <li><a href="#">일룸사회공헌</a></li>
-                    <li><a href="#">사회공헌 발자취</a></li>
-                    <li><a href="#">일룸 사회공헌 소식</a></li>
-                </ul></li>
-                <li><a href="#">고객지원</a>
-                <ul class="dep2">
-                    <li><a href="#">일룸서비스센터</a></li>
-                    <li><a href="#">고객상담</a></li>
-                    <li><a href="#">찾아오시는길</a></li>
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">대리점 개설 안내</a></li>
-                </ul></li>
-            </ul>
-        </nav>
-        <div></div>
-    </div>
-        <h2 class="hide">회원가입</h2>
-        <ul class="join">
-        <li><a href="#">LOGIN</a></li>
-        <li><a href="#">JOIN</a></li>
-    </ul>
-    </header>
-    <!-- header -->
+                </li>
+                    <li><a href="#">채용안내</a>
+                    <ul class="dep2">
+                        <li><a href="#">채용공고</a></li>
+                        <li><a href="#">나의 채용정보</a></li>
+                        <li><a href="#">채용정보</a></li>
+                        <li><a href="#">일룸인사</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">투자정보
+                        <ul class="dep2">
+                            <li><a href="#">경영정보</a></li>
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">공시</a></li>
+                        </ul>
+                    </a></li>
+                    <li><a href="#">사회공헌</a>
+                    <ul class="dep2">
+                        <li><a href="#">일룸사회공헌</a></li>
+                        <li><a href="#">사회공헌 발자취</a></li>
+                        <li><a href="#">일룸 사회공헌 소식</a></li>
+                    </ul></li>
+                    <li><a href="#">고객지원</a>
+                    <ul class="dep2">
+                        <li><a href="#">일룸서비스센터</a></li>
+                        <li><a href="#">고객상담</a></li>
+                        <li><a href="#">찾아오시는길</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">대리점 개설 안내</a></li>
+                    </ul></li>
+                </ul>
+            </nav>
+            <div></div>
+        </div>
+            <h2 class="hide">회원가입</h2>
+            <ul class="join">
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+        </ul>
+        </header>
+        <!-- header -->
 
    <section class="library">
        <h2><img src="img/gnb-logo.png" alt="iloom"> 라이브러리</h2>
@@ -111,7 +117,7 @@
 
 
    
-    <footer>
+   <footer>
         <div class="wrap">
         <ul><li>
             <a href="#"><img src="img/footer-logo.png" alt="iloom"></a>
@@ -120,18 +126,18 @@
        <a href="#"><img src="img/footer-f.png" alt="페이스북"></a> 
        <a href="#"><img src="img/footer-i.png" alt="인스타그램"></a> </li>
     </ul>
-        <ul><li><address>
+        <ul ><li><address>
             서울시 송파구 오금로311(오금동45-1)(주)일룸-대표이사 강성문<br>
             개인정보보호 책임자:강성문<br>
             사업자등록번호:215-86-93600 통신판매업신고: 2009-서울송파-0069호 부가통신사업신고필증:021129<br>
             webmaster@iloom.com Copyright &copy; 2019 iloom Inc All rights reserved
 
         </address></li></ul>
-        <ul>
+        <ul class="cs">
             <li>
-                고객센터<span>1577-5670</span><em>평일 09:30~17:30, 제품문의, 매장안내,AS, 분해설치</em>
+                고객센터<span>1577-5670</span><em class="pc">평일 09:30~17:30, 제품문의, 매장안내,AS, 분해설치</em>
             </li>
-            <li>
+            <li class="pc">
             <a href="#"><img src="img/mark-1.png" alt="Norton by Symantec"></a>
             <a href="#"><img src="img/mark-2.png" alt="현금영수증"></a>
             <a href="#"><img src="img/mark-3.png" alt="LGU+, escrow"></a>
@@ -140,7 +146,6 @@
     </footer>
 
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
     
