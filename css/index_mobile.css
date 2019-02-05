@@ -58,13 +58,13 @@ header .lnb nav > ul > li > a:focus,
 header .lnb nav > ul > li > a:hover{background-color: #aaa; color: #fff;}
 
 /* main-visual  */
-.main-visual{position: relative; margin: 0 auto; width: 100%; height: 300px;} 
+.main-visual{position: relative; margin: 0 auto; width: 100%; height: 274px;} 
 .main-visual div.image-slide ul.indicator{ position: absolute; width:100%; left: 0; bottom: 10px; text-align: center;}
 .main-visual div.image-slide ul.indicator li{display: inline-block; margin: 0 4px;}
 .main-visual div.image-slide ul.indicator li a{display: block; width: 30px; height: 4px; background: #aaa; color: transparent; text-indent: -9999px;}
 .main-visual div.image-slide ul.indicator li.on a{background: #c80a1da4;}
 
-.main-visual div.image-slide {position: relative; margin: 0 auto; width: 100%; height: 300px;}
+.main-visual div.image-slide {position: relative; margin: 0 auto; width: 100%; height: 100%;}
 .main-visual div.image-slide > div.box {position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden;}
 .main-visual div.image-slide ul.slide {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
 .main-visual div.image-slide ul.slide li {position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: none;}
@@ -80,7 +80,7 @@ header .lnb nav > ul > li > a:hover{background-color: #aaa; color: #fff;}
 .series h2{font-size: 35px; font-weight: normal; text-align: center; letter-spacing: 10px}
 .series span{display: inline-block; padding:15px 0 30px; font-size: 18px; color: rgb(88, 88, 88);}
 .series ul::after{content: ""; display: block; clear: both;}
-.series li{margin-bottom: 5px; padding:0 10px; display: inline-block; width: 276px; box-sizing: border-box;}
+.series li{margin-bottom: 5px; padding:0 10px; display: inline-block; width: 276px; box-sizing: border-box; vertical-align: middle;}
 .series li:nth-child(3){margin-right: 0;}
 .series li em{display: block; width: 100%;  height: 173px; overflow: hidden;}
 .series li:hover img{transform:scale(1.1); }
@@ -154,13 +154,8 @@ header ul.join li a{display: none;}
 header ul.join li:first-child::before{content: ""; display: inline-block; padding-right: 5px; width: 23px; height: 23px; background: url('../img/icon.png') no-repeat; vertical-align: middle; }
 header ul.join li:last-child::before{content: ""; display: inline-block; padding-right: 5px; width: 23px; height: 23px; background: url('../img/icon.png')no-repeat  -23px 0; ; vertical-align: middle; }
 
-.quick-menu{display: block;}
-.quick-menu ul{width: 100%; padding: 30px 0; overflow: hidden;}
-.quick-menu ul li{float: left; width: 33.3%; text-align: center;}
-.quick-menu ul li:nth-child(1){background: url()no-repeat;}
-.quick-menu ul li:nth-child(2){background: url()no-repeat;}
-.quick-menu ul li:nth-child(3){background: url()no-repeat;}
-.quick-menu ul li span{display: block; margin: 10px 0; color: #aaa;}
+.main-visual{position: relative; margin: 0 auto; width: 100%; height: 212px;} 
 
+.notice > div.notice-wrap{width: 100%; height: 500px; margin:0  auto 50px; padding: 30px 0;}
 .notice > div .top{display: none;}
 }
