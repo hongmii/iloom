@@ -60,7 +60,7 @@ header .lnb nav > ul > li > a:hover{background-color: #aaa; color: #fff;}
 .library{padding: 30px 0; text-align: center; border-top: 1px solid #e0e0e0;;border-bottom: 1px solid #e0e0e0;}
 .library h2{font-size: 25px; padding: 20px; font-weight: 400; }
 .library h2 img{padding:0 5px 5px;}
-.library p{font-size: 16x; font-weight: 400;}
+.library p{font-size: 16px; font-weight: 400;}
 
 .library-main{margin: 0 auto; padding: 0px 0px 20px; width: 100%; text-align: center;  border-bottom: 1px solid #e0e0e0; }
 .library-main a{display: block; width: 100%;}

@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* common */
 html {-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%;}
-body {margin: 0; font-family: 'Noto Sans KR', '나눔고딕', '맑은 고딕', 'malgun gothic', '돋움', 'Dotum', 'Apple SD Gothic Neo', 'Helvetica', sans-serif; font-weight: 500; font-size: 14px; color: #333;}
+body {margin: 0; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 14px; color: #333;}
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd {margin: 0; padding: 0;}
 h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
 a {color: inherit; text-decoration: inherit;}
@@ -9,14 +9,11 @@ img {vertical-align: middle;}
 a img {border: none;}
 li {list-style: none;}
 address, em, i {font-style: normal;}
-table {border-collapse: collapse;}
-table caption {overflow: hidden; width: 0; height: 0; text-indent: -9999px;}
 span.fontawesome {display: inline-block; vertical-align: middle;}
 iframe.hidden {position: absolute; left: -9999px;}
 .hide{position: absolute; left:-5000px ;}
 address{font-weight: normal; font-style: normal;}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+
 footer, header, hgroup, menu, nav, section {display: block;}
 body {line-height: 1;}
 ol, ul {list-style: none;}
